@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSE English Study Guide for Michelle</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237c3aed'%3E%3Cpath d='M12 3.5c-2.6-1.8-6-2-9-1v16c3-1 6.4-.8 9 1 2.6-1.8 6-2 9-1v-16c-3-1-6.4-.8-9 1z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem("dse_theme")==="dark")document.documentElement.classList.add("dark");}catch(e){}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{fontFamily:{display:["Fraunces","Georgia","serif"],sans:['"IBM Plex Sans"',"system-ui","sans-serif"]},keyframes:{fadein:{from:{opacity:0,transform:"translateY(8px)"},to:{opacity:1,transform:"none"}},pop:{from:{transform:"scale(.92)",opacity:0},to:{transform:"scale(1)",opacity:1}}},animation:{fadein:"fadein .35s ease both",pop:"pop .25s ease both"}}}};
+</script>
+<style>
+:root{--acc:#7c3aed;--acc-dark:#5b21b6;--acc-soft:#f4f0fe;--acc-line:#ddd1fb;--acc-ink:#3b1d8f;}
+::selection{background:var(--acc);color:#fff}
+.acc-text{color:var(--acc)}.acc-bg{background:var(--acc)}.acc-soft{background:var(--acc-soft)}
+.acc-border{border-color:var(--acc)}.acc-line{border-color:var(--acc-line)}
+.btn-acc{background:var(--acc);color:#fff}.btn-acc:hover{background:var(--acc-dark)}
+.ring-acc:focus{outline:none;box-shadow:0 0 0 3px rgba(124,58,237,.28);border-color:var(--acc)}
+.acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.acc.open>.acc-body{grid-template-rows:1fr}
+.acc.open .chev{transform:rotate(90deg)}
+.chev{transition:transform .25s}
+s.err{color:#b91c1c;text-decoration:line-through;text-decoration-color:#f87171;text-decoration-thickness:2px}
+mark.fix{background:#d9f5e6;color:#14532d;border-radius:4px;padding:0 .3em;font-weight:600}
+mark.key{background:var(--acc-soft);color:var(--acc-ink);border-radius:4px;padding:0 .3em;font-weight:600}
+.practice td.mask{filter:blur(6px);user-select:none;cursor:pointer}
+.practice tr.revealed td.mask{filter:none;user-select:auto}
+.leaf.on{background:var(--acc-soft);color:var(--acc-ink);font-weight:600;box-shadow:inset 3px 0 0 var(--acc)}
+aside::-webkit-scrollbar{width:5px}aside::-webkit-scrollbar-thumb{background:#d6d3cd;border-radius:99px}
+.opt.ok{background:#ecfdf5;border-color:#34d399}.opt.ok .let{background:#059669;color:#fff;border-color:#059669}
+.opt.bad{background:#fef2f2;border-color:#f87171}.opt.bad .let{background:#dc2626;color:#fff;border-color:#dc2626}
+details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
+.paper-num{font-family:Fraunces,serif;font-weight:900}
+table.vocab td,table.vocab th{padding:.65rem .8rem;border-bottom:1px solid #ece9e2;vertical-align:top}
+html.dark{--acc-soft:rgba(124,58,237,.16);--acc-line:rgba(124,58,237,.45);--acc-ink:#c4b5fd}
+.dark body{background-color:#0e1116!important}
+.dark .bg-white{background-color:#161a22!important}
+.dark .bg-white\/95{background-color:rgba(22,26,34,.92)!important}
+.dark .bg-white\/80{background-color:rgba(22,26,34,.8)!important}
+.dark .bg-slate-50{background-color:#1d222d!important}
+.dark .bg-slate-100{background-color:#242a37!important}
+.dark .text-slate-900,.dark .text-slate-800,.dark .text-slate-700{color:#e7eaf2!important}
+.dark .text-slate-600,.dark .text-slate-500{color:#98a1b3!important}
+.dark .text-slate-400{color:#6b7488!important}
+.dark .text-slate-300{color:#4d5568!important}
+.dark .border-slate-100,.dark .border-slate-200{border-color:#2a3040!important}
+.dark .border-slate-300{border-color:#39415a!important}
+.dark .divide-slate-100>*{border-color:#2a3040!important}
+.dark .placeholder\:text-slate-400::placeholder{color:#6b7488!important}
+.dark .hover\:bg-slate-50:hover,.dark .hover\:bg-slate-50\/60:hover{background-color:#1d222d!important}
+.dark .hover\:text-slate-800:hover,.dark .hover\:text-slate-700:hover{color:#e7eaf2!important}
+.dark .hover\:border-slate-300:hover,.dark .hover\:border-slate-400:hover{border-color:#39415a!important}
+.dark .bg-emerald-50{background-color:rgba(16,185,129,.14)!important}
+.dark .bg-rose-50{background-color:rgba(244,63,94,.14)!important}
+.dark .bg-amber-50{background-color:rgba(245,158,11,.14)!important}
+.dark .text-emerald-900{color:#b9f0d6!important}.dark .text-emerald-800{color:#6ee7b7!important}
+.dark .text-emerald-700,.dark .text-emerald-600,.dark .text-emerald-500{color:#34d399!important}
+.dark .text-rose-900{color:#fecdd3!important}.dark .text-rose-600,.dark .text-rose-500{color:#fb7185!important}
+.dark .text-amber-900{color:#fde68a!important}.dark .text-amber-600{color:#fbbf24!important}
+.dark .border-emerald-200,.dark .border-emerald-100{border-color:rgba(16,185,129,.35)!important}
+.dark mark.fix{background:rgba(16,185,129,.25);color:#a7f3d0}
+.dark s.err{color:#fca5a5}
+.dark input,.dark textarea{background-color:#1d222d;color:#e7eaf2}
+.dark table.vocab td,.dark table.vocab th{border-color:#2a3040}
+.dark aside::-webkit-scrollbar-thumb{background:#39415a}
+</style>
+</head>
+<body class="font-sans bg-[#faf9f6] text-slate-800 antialiased">
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+  <div class="max-w-[1500px] mx-auto px-4 h-16 flex items-center justify-between gap-3">
+    <button data-nav="home" class="flex items-center gap-2.5 shrink-0 text-left">
+      <svg width="30" height="30" viewBox="0 0 24 24" class="shrink-0"><path fill="var(--acc)" d="M12 3.5c-2.6-1.8-6-2-9-1v16c3-1 6.4-.8 9 1 2.6-1.8 6-2 9-1v-16c-3-1-6.4-.8-9 1z"/><path fill="var(--acc)" d="M12 5.9v11.6c-2-1-4.5-1.4-7-1V4.9c2.5-.5 5-.2 7 1z" opacity=".55"/></svg>
+      <span class="leading-tight">
+        <span class="font-display font-black text-lg md:text-xl tracking-tight text-slate-900">DSE English Study Guide</span>
+        <span class="hidden sm:block text-[10px] uppercase tracking-[.22em] text-slate-400 font-semibold">for Michelle · by Aidan Cheung</span>
+      </span>
+    </button>
+    <div class="flex items-center gap-1.5 overflow-x-auto">
+      <button id="menu-btn" class="lg:hidden p-2 rounded-lg border border-slate-200 hover:bg-slate-50" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <button id="theme-btn" class="p-2 rounded-lg border border-slate-200 hover:bg-slate-50" title="Toggle dark / light theme">
+        <svg id="ico-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg id="ico-sun" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button data-nav="ws-proof-1" class="whitespace-nowrap text-[13px] font-semibold px-3 py-1.5 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition">Worksheets</button>
+      <button data-nav="quiz" class="whitespace-nowrap text-[13px] font-semibold px-3 py-1.5 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition">Grammar Quiz</button>
+      <button data-nav="vocab" class="whitespace-nowrap text-[13px] font-semibold px-3 py-1.5 rounded-full border border-slate-200 text-slate-600 hover:border-slate-300 transition">Vocab List</button>
+    </div>
+  </div>
+</header>
+<div class="max-w-[1500px] mx-auto flex relative">
+  <div id="backdrop" class="hidden fixed inset-0 bg-slate-900/40 z-30 lg:hidden"></div>
+  <aside id="sidebar" class="fixed lg:sticky top-16 z-30 w-[290px] shrink-0 h-[calc(100vh-4rem)] bg-white border-r border-slate-200 flex flex-col -translate-x-full lg:translate-x-0 transition-transform duration-300">
+    <div class="p-4 pb-3 border-b border-slate-100">
+      <p class="text-[11px] font-bold uppercase tracking-[.18em] acc-text mb-2.5">HKDSE English</p>
+      <div class="relative">
+        <svg class="absolute left-2.5 top-2.5 text-slate-400" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="sb-search" type="text" placeholder="Filter topics…" class="ring-acc w-full text-sm pl-8 pr-3 py-2 rounded-lg border border-slate-200 bg-slate-50 placeholder:text-slate-400">
+      </div>
+    </div>
+    <nav id="sb-tree" class="flex-1 overflow-y-auto p-3 space-y-1"></nav>
+    <div class="p-4 border-t border-slate-100"><div class="acc-soft rounded-xl p-3 text-xs leading-relaxed text-slate-600"><span class="font-bold acc-text">Study tip:</span> Do one error-correction set a day — HKDSE rewards accuracy under time pressure.</div></div>
+  </aside>
+  <main id="content" class="flex-1 min-w-0 px-4 sm:px-8 py-8"></main>
+</div>
+<footer class="border-t border-slate-200 mt-8">
+  <div class="max-w-[1500px] mx-auto px-6 py-5 flex flex-wrap justify-between gap-2 text-xs text-slate-400">
+    <span>Aidan Cheung's HKDSE English Guide</span>
+    <span class="flex items-center gap-3">
+      <button id="export-btn" data-export-only class="font-semibold acc-text hover:underline">Export single-file copy</button>
+      <span data-export-only>· dev build (keep content.js beside this file)</span>
+      <span>Quiz adapted from <i>Essential Grammar in Use</i> (R. Murphy, CUP)</span>
+    </span>
+  </div>
+</footer>
+<script src="content.js"></script>
+<script>
+"use strict";
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/'/g,"&#39;").replace(/"/g,"&quot;");}
+function norm(s){return s.toLowerCase().replace(/[\u2019\u02BC']/g,"'").replace(/\s+/g," ").replace(/[.!。]/g,"").trim();}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function crumbs(p){return "<p class='text-[11px] font-bold uppercase tracking-[.18em] text-slate-400 mb-3'>"+p.join(" <span class='text-slate-300'>▸</span> ")+"</p>";}
+function pageHead(t,tag,blurb){return "<div class='mb-7'><div class='flex flex-wrap items-center gap-3 mb-2'><h1 class='font-display font-black text-3xl md:text-4xl tracking-tight text-slate-900'>"+t+"</h1>"+(tag?"<span class='acc-soft acc-text text-[11px] font-bold px-2.5 py-1 rounded-full border acc-line'>"+tag+"</span>":"")+"</div>"+(blurb?"<p class='text-slate-500 max-w-3xl leading-relaxed'>"+blurb+"</p>":"")+"</div>";}
+function taskCard(head,items){return "<div class='rounded-2xl border-2 acc-line acc-soft p-6 mb-6'><p class='font-bold text-slate-900 mb-3 flex items-center gap-2'><svg width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='var(--acc)' stroke-width='2.4'><path d='M20 6L9 17l-5-5'/></svg>"+head+"</p><ul class='space-y-1.5'>"+items.map(function(x){return "<li class='flex gap-2.5 text-[15px] text-slate-700'><span class='acc-text font-bold'>•</span>"+x+"</li>";}).join("")+"</ul></div>";}
+function modelAnswer(title,html){return "<details class='bg-white rounded-2xl border-2 border-emerald-200 mb-6'><summary class='p-5 font-bold text-emerald-800 flex justify-between items-center'>"+title+" — toggle to reveal <span class='text-emerald-500 font-normal text-sm'>click</span></summary><div class='px-5 pb-6 border-t border-emerald-100 pt-4 text-[15px] leading-[1.85] text-slate-700'>"+html+"</div></details>";}
+function tipBox(t){return "<div class='acc-soft border acc-line rounded-xl p-4 text-sm text-slate-600'><span class='font-bold acc-text'>Examiner's lens:</span> "+t+"</div>";}
+function mcFill(n,prompt,accepts,exp){return "<div class='qitem bg-white rounded-xl border border-slate-200 p-5'><p class='text-[15px] text-slate-800'><span class='paper-num acc-text mr-2'>"+n+"</span>"+prompt+"</p><div class='mt-3 flex flex-wrap gap-2'><input data-input type='text' class='ring-acc text-sm px-3 py-2 rounded-lg border border-slate-300 w-full sm:w-64' placeholder='Type your answer…' autocomplete='off'><button data-check data-accepts='"+esc(JSON.stringify(accepts))+"' class='btn-acc text-sm font-bold px-4 py-2 rounded-lg'>Check</button><button data-reveal='r"+n+"' data-show='Reveal' data-hide='Hide' class='btn-rev text-sm font-semibold text-slate-500 border border-slate-200 hover:bg-slate-50 px-3 py-2 rounded-lg'>Reveal</button></div><p data-fb class='hidden mt-2 text-sm font-semibold'></p><div id='rv-r"+n+"' class='hidden mt-3 text-sm animate-fadein'><span class='font-bold text-emerald-700'>Answer:</span> <b>"+accepts[0]+"</b> — "+exp+"</div></div>";}
+function mcRadio(n,prompt,opts,correct,exp,letters){letters=letters||"ABCD";return "<div class='qitem bg-white rounded-xl border border-slate-200 p-5' data-mcwrap data-correct='"+correct+"'><p class='text-[15px] text-slate-800 mb-3'><span class='paper-num acc-text mr-2'>"+n+"</span>"+prompt+"</p><div class='space-y-2'>"+opts.map(function(o,j){return "<label class='opt flex items-center gap-3 border border-slate-200 rounded-lg px-3 py-2 cursor-pointer hover:border-slate-300 transition text-sm'><input type='radio' name='rq"+n+"' value='"+j+"' class='accent-[#7c3aed]'><span class='let w-6 h-6 shrink-0 grid place-items-center text-xs font-bold border border-slate-300 rounded-md text-slate-500'>"+letters[j]+"</span><span>"+o+"</span></label>";}).join("")+"</div><div class='mt-3'><button data-mccheck class='btn-acc text-sm font-bold px-4 py-2 rounded-lg'>Check answer</button></div><div data-mcexp class='hidden mt-3 text-sm rounded-lg px-4 py-3 animate-fadein'>"+(letters?"<b>"+letters[correct]+".</b> ":"")+exp+"</div></div>";}
+function renderReading(d){
+  var paras=d.paras.map(function(p,i){return "<div class='flex gap-4 "+(i>0?"mt-5":"")+"'><span class='paper-num text-slate-300 text-2xl shrink-0 w-7 text-right leading-none pt-0.5'>"+(i+1)+"</span><p class='text-[15.5px] leading-[1.85] text-slate-700'>"+p+"</p></div>";}).join("");
+  var qs=d.qs.map(function(q,idx){var n=idx+1;
+    if(q.t==="mc")return mcRadio(n,q.q,q.opts,q.correct,q.exp);
+    if(q.t==="tfng")return mcRadio(n,q.q,["True","False","Not Given"],q.correct,q.exp,"");
+    return mcFill(n,q.q,q.accepts,q.exp);}).join("");
+  return crumbs(d.cr)+pageHead(d.title,d.tag,d.blurb)+
+  "<article class='bg-white rounded-2xl border border-slate-200 p-6 md:p-9 mb-8 shadow-sm'><h2 class='font-display font-bold text-xl text-slate-900 mb-5'>"+d.passTitle+"</h2>"+paras+"</article>"+
+  "<h3 class='font-display font-bold text-2xl text-slate-900 mb-5'>Questions</h3><div class='space-y-5'>"+qs+"</div>"+
+  "<details class='mt-8 bg-white rounded-2xl border border-slate-200'><summary class='p-5 font-bold text-slate-800 flex justify-between items-center'>Scoring guide — toggle to reveal <span class='text-slate-400 font-normal text-sm'>click</span></summary><div class='px-5 pb-5 text-sm text-slate-600 space-y-2 border-t border-slate-100 pt-4'>"+d.guide+"</div></details>";
+}
+function renderWriting(d){return crumbs(d.cr)+pageHead(d.title,d.tag,d.blurb)+(d.source||"")+taskCard(d.reqHead||"Task",d.bullets||[])+(d.scaffold||"")+modelAnswer(d.modelTitle,d.model)+(d.tip?tipBox(d.tip):"");}
+function renderSpeaking(d){return crumbs(d.cr)+pageHead(d.title,d.tag,d.blurb)+
+ "<div class='bg-white rounded-2xl border border-slate-200 p-5 mb-6'><p class='font-bold text-slate-800 mb-3'>Source text</p><dl class='divide-y divide-slate-100'>"+d.source.map(function(r){return "<div class='py-2.5 grid sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 text-sm'><dt class='font-semibold text-slate-400'>"+r[0]+"</dt><dd class='text-slate-700'>"+r[1]+"</dd></div>";}).join("")+"</dl></div>"+
+ taskCard("Discussion task",d.task)+
+ "<div class='bg-white rounded-2xl border border-slate-200 p-5 mb-6'><p class='font-bold text-slate-800 mb-3'>Level 5 strategy pointers</p><ul class='space-y-2'>"+d.pointers.map(function(p){return "<li class='text-sm text-slate-700 leading-relaxed'><span class='acc-text font-bold'>•</span> "+p+"</li>";}).join("")+"</ul></div>"+
+ modelAnswer(d.modelQ,d.modelA);}
+function renderListening(d){
+  var tasks=d.tasks.map(function(q,idx){var n=idx+1;
+    if(q.t==="mc")return mcRadio(n,q.q,q.opts,q.correct,q.exp);
+    return mcFill(n,q.q,q.accepts,q.exp);}).join("");
+  return crumbs(d.cr)+pageHead(d.title,d.tag,d.blurb)+taskCard(d.reqHead,d.bullets)+"<div class='space-y-4 mb-6'>"+tasks+"</div>"+modelAnswer(d.modelTitle,d.model);
+}
+function renderWs(d){
+  var items=d.items.map(function(it,i){var id=d.key+"-"+i;
+    if(d.mode==="reveal"){return "<div class='qitem bg-white rounded-xl border border-slate-200 p-5'><div class='flex gap-4'><span class='paper-num acc-text text-lg leading-none pt-0.5 w-7 shrink-0 text-right'>"+(i+1)+"</span><div class='flex-1 min-w-0'><p class='text-[15px] leading-relaxed text-slate-800'>"+it.q+"</p><button data-reveal='"+id+"' data-show='Show correction' data-hide='Hide correction' class='btn-rev mt-3 text-xs font-bold acc-text border acc-line acc-soft hover:opacity-80 px-3 py-1.5 rounded-lg transition'>Show correction</button><div id='rv-"+id+"' class='hidden mt-4 space-y-2 animate-fadein'><p class='text-[15px] leading-relaxed bg-slate-50 border border-slate-200 rounded-lg px-4 py-3'>"+it.marked+"</p><p class='text-sm'><span class='font-bold text-emerald-700'>"+it.a+"</span></p><p class='text-sm text-slate-500 leading-relaxed'><span class='font-semibold text-slate-600'>Why:</span> "+it.exp+"</p></div></div></div></div>";}
+    return "<div class='qitem bg-white rounded-xl border border-slate-200 p-5'><div class='flex gap-4'><span class='paper-num acc-text text-lg leading-none pt-0.5 w-7 shrink-0 text-right'>"+(i+1)+"</span><div class='flex-1 min-w-0'><p class='text-[15px] leading-relaxed text-slate-800'>"+it.q+"</p><div class='mt-3 flex flex-wrap gap-2'><input data-input type='text' placeholder='Type your answer…' class='ring-acc text-sm px-3 py-2 rounded-lg border border-slate-300 w-full sm:w-64' autocomplete='off'><button data-check data-accepts='"+esc(JSON.stringify(it.accepts))+"' class='btn-acc text-sm font-bold px-4 py-2 rounded-lg'>Check</button><button data-reveal='"+id+"' data-show='Reveal' data-hide='Hide' class='btn-rev text-sm font-semibold text-slate-500 border border-slate-200 hover:bg-slate-50 px-3 py-2 rounded-lg'>Reveal</button></div><p data-fb class='hidden mt-2 text-sm font-semibold'></p><div id='rv-"+id+"' class='hidden mt-3 animate-fadein'><p class='text-sm'><span class='font-bold text-emerald-700'>Answer:</span> "+it.accepts.slice(0,3).map(function(a){return "<b>"+a+"</b>";}).join(" / ")+"</p><p class='text-sm text-slate-500 leading-relaxed mt-1'><span class='font-semibold text-slate-600'>Why:</span> "+it.exp+"</p></div></div></div></div>";}).join("");
+  return crumbs(d.cr)+pageHead(d.title,d.tag,d.intro)+
+  "<div class='flex flex-wrap gap-2 mb-6'><button data-all='show' class='text-xs font-bold text-slate-600 border border-slate-300 hover:bg-white px-3 py-1.5 rounded-lg'>Reveal all answers</button><button data-all='hide' class='text-xs font-bold text-slate-600 border border-slate-300 hover:bg-white px-3 py-1.5 rounded-lg'>Hide all answers</button></div><div class='space-y-4'>"+items+"</div>"+
+  "<div class='mt-8 acc-soft border acc-line rounded-xl p-4 text-sm text-slate-600'><span class='font-bold acc-text'>Marking note:</span> Answers are matched on the spelling of the key verb/word — contractions are accepted.</div>";
+}
+var quizSet=[];
+function drawQuiz(len){
+  var byCat={};CONTENT.quiz.forEach(function(q){(byCat[q.c]=byCat[q.c]||[]).push(q);});
+  var cats=Object.keys(byCat);cats.forEach(function(c){shuffle(byCat[c]);});
+  var used={},picks=[];cats.forEach(function(c){used[c]=0;});
+  cats.forEach(function(c){var q=Math.max(1,Math.round(len*byCat[c].length/CONTENT.quiz.length));for(var i=0;i<q&&picks.length<len&&used[c]<byCat[c].length;i++)picks.push(byCat[c][used[c]++]);});
+  var ci=0;while(picks.length<len&&ci<cats.length*20){var c=cats[ci%cats.length];if(used[c]<byCat[c].length)picks.push(byCat[c][used[c]++]);ci++;}
+  shuffle(picks);
+  return picks.slice(0,len).map(function(q){var perm=shuffle([0,1,2,3]);return {q:q.q,u:q.u,c:q.c,o:perm.map(function(i){return q.o[i];}),a:perm.indexOf(q.a)};});
+}
+function renderQuiz(){
+  var len=+(localStorage.getItem("dse_quiz_len")||20);
+  quizSet=drawQuiz(len);
+  var cards=quizSet.map(function(q,i){
+    return "<div class='qcard bg-white rounded-xl border border-slate-200 p-5' data-qi='"+i+"'><div class='flex flex-wrap items-center gap-2 mb-2.5'><span class='paper-num acc-text text-lg leading-none'>"+String(i+1).padStart(2,"0")+"</span><span class='text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full'>"+q.c+"</span><span data-unit class='hidden text-[10px] font-bold uppercase tracking-wider acc-soft acc-text px-2 py-0.5 rounded-full'>Unit "+q.u+"</span></div><p class='text-[15px] text-slate-800 leading-relaxed mb-3'>"+q.q+"</p><div class='space-y-2'>"+
+    q.o.map(function(o,j){return "<label class='opt flex items-center gap-3 border border-slate-200 rounded-lg px-3 py-2 cursor-pointer hover:border-slate-300 transition text-sm'><input type='radio' name='q"+i+"' value='"+j+"' class='accent-[#7c3aed]'><span class='let w-6 h-6 shrink-0 grid place-items-center text-xs font-bold border border-slate-300 rounded-md text-slate-500'>"+"abcde"[j]+"</span><span>"+o+"</span></label>";}).join("")+
+    "</div><div data-exp class='hidden mt-3 text-sm leading-relaxed rounded-lg px-4 py-3 animate-fadein'></div></div>";}).join("");
+  return crumbs(["HKDSE English","Assessment"])+pageHead("Grammar Quiz","auto-marked · a–d","Random draw from the "+CONTENT.quiz.length+"-question bank built on <i>Essential Grammar in Use</i> (Murphy). Questions and options reshuffle every attempt; unit references reveal after marking.")+
+  "<div class='bg-white rounded-2xl border border-slate-200 p-5 mb-7 flex flex-wrap items-center gap-4 sticky top-[72px] z-20 shadow-sm'><div class='flex items-center gap-2'><label class='text-xs font-bold text-slate-500 uppercase tracking-wide' for='quiz-len'>Length</label><select id='quiz-len' class='ring-acc text-sm border border-slate-300 rounded-lg px-2 py-1.5'>"+[10,15,20,25,30].map(function(n){return "<option value='"+n+"'"+(n===len?" selected":"")+">"+n+" questions</option>";}).join("")+"</select><button id='quiz-new' class='text-sm font-semibold text-slate-600 border border-slate-300 hover:bg-slate-50 px-3 py-1.5 rounded-lg'>New draw</button></div><div class='flex-1 min-w-[160px]'><div class='h-2 rounded-full bg-slate-100 overflow-hidden'><div id='quiz-bar' class='h-full acc-bg rounded-full transition-all duration-300' style='width:0%'></div></div><p class='text-xs text-slate-400 mt-1.5 font-semibold'><span id='quiz-count'>0</span>/"+len+" answered</p></div><button id='quiz-submit' class='btn-acc font-bold text-sm px-6 py-2.5 rounded-xl'>Submit quiz</button><button id='quiz-retake' class='hidden font-bold text-sm px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50'>Retake</button></div>"+
+  "<div id='quiz-result' class='hidden mb-7 animate-pop'></div><div class='space-y-5' id='quiz-list'>"+cards+"</div>";
+}
+function initQuiz(){
+  document.getElementById("quiz-len").onchange=function(e){localStorage.setItem("dse_quiz_len",e.target.value);showPage("quiz");};
+  document.getElementById("quiz-new").onclick=function(){showPage("quiz");};
+  document.getElementById("quiz-list").addEventListener("change",function(e){if(e.target.matches("input[type=radio]")){var a=0;for(var i=0;i<quizSet.length;i++)if(document.querySelector("input[name=q"+i+"]:checked"))a++;document.getElementById("quiz-count").textContent=a;document.getElementById("quiz-bar").style.width=(a/quizSet.length*100)+"%";}});
+  document.getElementById("quiz-submit").onclick=function(){
+    var missing=[];for(var i=0;i<quizSet.length;i++)if(!document.querySelector("input[name=q"+i+"]:checked"))missing.push(i);
+    if(missing.length){var c0=document.querySelector(".qcard[data-qi='"+missing[0]+"']");c0.scrollIntoView({behavior:"smooth",block:"center"});c0.classList.add("ring-2","ring-rose-300");setTimeout(function(){c0.classList.remove("ring-2","ring-rose-300");},1600);return;}
+    var score=0,byCat={};
+    quizSet.forEach(function(q,i){var sel=+document.querySelector("input[name=q"+i+"]:checked").value;var c=document.querySelector(".qcard[data-qi='"+i+"']");
+      c.querySelectorAll("input[type=radio]").forEach(function(r){r.disabled=true;});
+      c.querySelectorAll(".opt").forEach(function(lab,j){if(j===q.a)lab.classList.add("ok");else if(j===sel)lab.classList.add("bad");});
+      var ok=sel===q.a;if(ok)score++;byCat[q.c]=(byCat[q.c]||0)+(ok?1:0);
+      var exp=c.querySelector("[data-exp]");exp.classList.remove("hidden");exp.classList.add(ok?"bg-emerald-50":"bg-rose-50",ok?"text-emerald-900":"text-rose-900");
+      exp.innerHTML=(ok?"Correct":"Not quite — answer: <b>"+"abcde"[q.a]+". "+q.o[q.a]+"</b>")+" <span class='opacity-60'>(Unit "+q.u+", Essential Grammar in Use)</span>";
+      c.querySelector("[data-unit]").classList.remove("hidden");});
+    var len=quizSet.length,pct=Math.round(score/len*100);
+    var band=score/len>=.9?"Outstanding — Level 5** territory.":score/len>=.7?"Strong — Level 4–5 standard.":score/len>=.5?"On the way — revisit the flagged units.":"Keep practising — review and retake.";
+    var bk="dse_quiz_best_"+len,best=Math.max(score,+(localStorage.getItem(bk)||0));localStorage.setItem(bk,best);
+    var res=document.getElementById("quiz-result");
+    res.innerHTML="<div class='rounded-2xl border-2 acc-line acc-soft p-6 flex flex-wrap items-center gap-6'><div><p class='paper-num text-5xl acc-text leading-none'>"+score+"<span class='text-2xl text-slate-300'>/"+len+"</span></p><p class='text-xs font-bold uppercase tracking-wider text-slate-400 mt-1'>Score · "+pct+"% · Best ("+len+"q): "+best+"/"+len+"</p></div><div class='flex-1 min-w-[220px]'><p class='font-display font-bold text-lg text-slate-900'>"+band+"</p><p class='text-xs text-slate-500 mt-2'>"+Object.keys(byCat).map(function(c){return "<span class='inline-block bg-white border acc-line rounded-full px-2.5 py-0.5 mr-1.5 mb-1.5'>"+c+" "+byCat[c]+"</span>";}).join("")+"</p></div></div>";
+    res.classList.remove("hidden");res.scrollIntoView({behavior:"smooth",block:"center"});
+    document.getElementById("quiz-submit").classList.add("hidden");document.getElementById("quiz-retake").classList.remove("hidden");};
+  document.getElementById("quiz-retake").onclick=function(){showPage("quiz");};
+}
+function renderHome(){
+  var ws=0;CONTENT.tree.forEach(function(g){if((g.label||"").indexOf("Grammar Gym")===0)ws=g.pages.length;});
+  return crumbs(["HKDSE English","Overview"])+
+  "<section class='relative overflow-hidden rounded-2xl border acc-line acc-soft p-8 md:p-12 mb-10'><div class='absolute -right-10 -top-10 opacity-[.07]'><svg width='260' height='260' viewBox='0 0 24 24'><path fill='var(--acc)' d='M12 1l2.4 6.2L21 5.5l-4.2 5L21 18.5l-6.6-1.7L12 23l-2.4-6.2L3 18.5l4.2-8L3 5.5l6.6 1.7z'/></svg></div>"+
+  "<p class='text-[11px] font-bold uppercase tracking-[.22em] acc-text mb-3'>HKDSE English Language · Papers 1 - 4</p>"+
+  "<h1 class='font-display font-black text-4xl md:text-5xl tracking-tight text-slate-900 leading-[1.05] max-w-2xl'>Read sharply.<br>Write with intent.<br>Model answers and scores provided.</h1>"+
+  "<p class='mt-4 text-slate-600 max-w-2xl leading-relaxed'>Your own local distraction-free website: original & recreated grammar worksheets, full custom reading papers, scaffolded writing tasks, an auto-marked grammar quiz, and a personal bilingual word bank updated by me (Aidan Cheung) every lesson</p>"+
+  "<div class='mt-7 flex flex-wrap gap-3'><button data-nav='quiz' class='btn-acc font-bold text-sm px-5 py-3 rounded-xl shadow-sm'>Take the Grammar Quiz</button><button data-nav='ws-proof-1' class='bg-white font-bold text-sm px-5 py-3 rounded-xl border border-slate-300 hover:border-slate-400'>Browse worksheets</button><button data-nav='vocab' class='bg-white font-bold text-sm px-5 py-3 rounded-xl border border-slate-300 hover:border-slate-400'>Open vocab list</button></div>"+
+  "<div class='mt-9 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl'>"+[[ws,"grammar worksheets"],[CONTENT.quiz.length,"quiz questions in bank"],["39+","vocab entries"],["25","reading questions"]].map(function(s){return "<div class='bg-white/80 border acc-line rounded-xl px-4 py-3'><p class='paper-num text-2xl acc-text'>"+s[0]+"</p><p class='text-[11px] font-semibold text-slate-500 uppercase tracking-wide'>"+s[1]+"</p></div>";}).join("")+"</div></section>"+
+  "<section class='bg-white rounded-2xl border border-slate-200 p-6'><h2 class='font-display font-bold text-xl text-slate-900 mb-4'>Recently added from your lessons</h2><ul class='divide-y divide-slate-100 text-sm'>"+
+  [["read-f4-tram","Paper 1 — Tramways & Gig Economy passages","Form 4 / Form 5 full-length papers with scoring guides"],
+   ["read-found-slow","Foundation reading: “Slow Living”","Vocab matching + comprehension; glossary words added to the masterlist"],
+   ["write-f4-esports","Paper 2 model answers","Hike email, esports article, council letter, AI letter, Form 4 advice article"],
+   ["p3-f5-intern","Paper 3 integrated writing","Charity fair sponsorship letter + hybrid internship report"],
+   ["p4-f5-vol","Paper 4 speaking packs","Eco-fund + youth volunteerism with Level 5 language"],
+   ["p3-found-listen","Foundation listening","Pomodoro talk with teacher script + answers"],
+   ["vocab","Vocab Masterlist","39 seed words — fully editable, saved in your browser"]].map(function(r){return "<li class='py-2.5 flex flex-wrap items-center justify-between gap-2'><span class='text-slate-700'><span class='font-semibold'>"+r[1]+"</span> <span class='text-slate-400'>— "+r[2]+"</span></span><button data-nav='"+r[0]+"' class='acc-text font-bold hover:underline'>Open</button></li>";}).join("")+"</ul></section>";
+}
+var vocab=[],vocabEdit=null;
+function loadVocab(){try{var raw=localStorage.getItem("dse_vocab_v2");vocab=raw?JSON.parse(raw):CONTENT.vocabSeed.map(function(w){return Object.assign({},w);});}catch(e){vocab=CONTENT.vocabSeed.map(function(w){return Object.assign({},w);});}}
+function saveVocab(){localStorage.setItem("dse_vocab_v2",JSON.stringify(vocab));}
+function renderVocabRows(){var q=(document.getElementById("vocab-search").value||"").toLowerCase();var body=document.getElementById("vocab-body");if(!body)return;
+  var rows=vocab.map(function(w,i){w=Object.assign({},w);w.i=i;return w;}).filter(function(w){return !q||(w.word+" "+w.en+" "+w.trad+" "+w.simp+" "+w.pos).toLowerCase().indexOf(q)>-1;});
+  body.innerHTML=rows.map(function(w){return "<tr data-vi='"+w.i+"' class='hover:bg-slate-50/60'><td class='font-bold text-slate-900'>"+w.word+"</td><td><span class='text-[11px] font-bold acc-soft acc-text px-2 py-0.5 rounded-full whitespace-nowrap'>"+(w.pos||"—")+"</span></td><td class='mask text-slate-600 max-w-[280px]'>"+w.en+"</td><td class='mask text-slate-700'>"+(w.trad||"—")+"</td><td class='mask text-slate-700'>"+(w.simp||"—")+"</td><td class='whitespace-nowrap text-right'><button data-vedit='"+w.i+"' class='text-slate-400 hover:acc-text p-1' title='Edit'>✎</button><button data-vdel='"+w.i+"' class='text-slate-400 hover:text-rose-500 p-1' title='Delete'>✕</button></td></tr>";}).join("")||"<tr><td colspan='6' class='text-center text-slate-400 py-8'>No entries match your search.</td></tr>";
+  document.getElementById("vocab-count").textContent=vocab.length;}
+function renderVocab(){return crumbs(["HKDSE English","Lexis"])+pageHead("Vocab Masterlist","EN ↔ 中文 · editable","Your growing bilingual word bank, updated by Aidan Cheung every lesson. Add new entries below — everything is saved automatically in this browser. Toggle Practice Mode to blur meanings until you click a row.")+
+ "<div class='bg-white rounded-2xl border border-slate-200 p-5 mb-6'><p class='font-bold text-slate-800 mb-3 text-sm'>Add a new word</p><form id='vocab-form' class='grid md:grid-cols-12 gap-2.5'><input id='v-word' required placeholder='Word / phrase *' class='ring-acc md:col-span-3 text-sm border border-slate-300 rounded-lg px-3 py-2'><input id='v-pos' placeholder='Part of speech' class='ring-acc md:col-span-2 text-sm border border-slate-300 rounded-lg px-3 py-2'><input id='v-en' required placeholder='English meaning *' class='ring-acc md:col-span-3 text-sm border border-slate-300 rounded-lg px-3 py-2'><input id='v-trad' placeholder='繁體中文' class='ring-acc md:col-span-2 text-sm border border-slate-300 rounded-lg px-3 py-2'><input id='v-simp' placeholder='简体中文' class='ring-acc md:col-span-2 text-sm border border-slate-300 rounded-lg px-3 py-2'><div class='md:col-span-12 flex flex-wrap items-center gap-3'><button type='submit' id='v-submit' class='btn-acc text-sm font-bold px-5 py-2 rounded-lg'>Add to masterlist</button><button type='button' id='v-cancel' class='hidden text-sm font-semibold text-slate-500 hover:text-slate-700'>Cancel edit</button><span id='v-msg' class='text-sm font-semibold text-emerald-600'></span></div></form></div>"+
+ "<div class='flex flex-wrap items-center gap-3 mb-4'><input id='vocab-search' type='text' placeholder='Search word, meaning, 中文…' class='ring-acc flex-1 min-w-[220px] text-sm border border-slate-300 bg-white rounded-lg px-3 py-2'><label class='flex items-center gap-2 text-sm font-semibold text-slate-600 bg-white border border-slate-200 rounded-lg px-3 py-2 cursor-pointer'><input id='vocab-practice' type='checkbox' class='accent-[#7c3aed]'> Practice mode</label><button id='vocab-reset' class='text-sm font-semibold text-slate-500 bg-white border border-slate-200 hover:bg-slate-50 rounded-lg px-3 py-2'>Reset to default</button></div>"+
+ "<div class='bg-white rounded-2xl border border-slate-200 overflow-hidden'><div class='overflow-x-auto' id='vocab-wrap'><table class='vocab w-full text-sm min-w-[820px]'><thead><tr class='text-left text-[11px] uppercase tracking-wider text-slate-400 bg-slate-50'><th class='!py-3'>Word / Phrase</th><th>Part of Speech</th><th>English Meaning</th><th>繁體</th><th>简体</th><th class='w-20'></th></tr></thead><tbody id='vocab-body'></tbody></table></div><p class='px-5 py-3 text-xs text-slate-400 border-t border-slate-100'><span id='vocab-count'>0</span> entries · stored locally in your browser</p></div>";}
+function initVocab(){loadVocab();renderVocabRows();
+ function gv(id){return document.getElementById(id).value.trim();}
+ function flash(m){var el=document.getElementById("v-msg");el.textContent=m;setTimeout(function(){el.textContent="";},1800);}
+ function cancelEdit(){vocabEdit=null;document.getElementById("v-submit").textContent="Add to masterlist";document.getElementById("v-cancel").classList.add("hidden");}
+ document.getElementById("vocab-search").addEventListener("input",renderVocabRows);
+ document.getElementById("vocab-practice").addEventListener("change",function(e){document.getElementById("vocab-wrap").classList.toggle("practice",e.target.checked);});
+ document.getElementById("vocab-form").addEventListener("submit",function(e){e.preventDefault();var entry={word:gv("v-word"),pos:gv("v-pos"),en:gv("v-en"),trad:gv("v-trad"),simp:gv("v-simp")};if(vocabEdit!==null){vocab[vocabEdit]=entry;flash("Updated");}else{vocab.unshift(entry);flash("Added");}saveVocab();renderVocabRows();cancelEdit();e.target.reset();});
+ document.getElementById("v-cancel").onclick=function(){cancelEdit();document.getElementById("vocab-form").reset();};
+ document.getElementById("vocab-reset").onclick=function(){if(confirm("Reset the masterlist to the seed list? Your additions will be removed.")){vocab=CONTENT.vocabSeed.map(function(w){return Object.assign({},w);});saveVocab();renderVocabRows();}};
+ document.getElementById("vocab-body").addEventListener("click",function(e){
+  var ed=e.target.closest("[data-vedit]");if(ed){var i=+ed.dataset.vedit,w=vocab[i];vocabEdit=i;document.getElementById("v-word").value=w.word;document.getElementById("v-pos").value=w.pos;document.getElementById("v-en").value=w.en;document.getElementById("v-trad").value=w.trad;document.getElementById("v-simp").value=w.simp;document.getElementById("v-submit").textContent="Update word";document.getElementById("v-cancel").classList.remove("hidden");document.getElementById("vocab-form").scrollIntoView({behavior:"smooth",block:"center"});return;}
+  var del=e.target.closest("[data-vdel]");if(del){if(confirm("Delete this word?")){vocab.splice(+del.dataset.vdel,1);saveVocab();renderVocabRows();}return;}
+  var tr=e.target.closest("tr[data-vi]");if(tr&&document.getElementById("vocab-wrap").classList.contains("practice"))tr.classList.toggle("revealed");});}
+var currentPage="home",openG={};
+function renderTree(){
+  document.getElementById("sb-tree").innerHTML=CONTENT.tree.map(function(g,gi){
+    var gid="g"+gi,isOpen=openG[gid]!==false;
+    var inner="";
+    if(g.subs){inner=g.subs.map(function(s,si){var sid=gid+"s"+si,sOpen=openG[sid]!==false;
+      return "<div class='acc "+(sOpen?"open":"")+"' data-gid='"+sid+"'><button data-group='"+sid+"' class='w-full flex items-center gap-2 pl-3 pr-2 py-1.5 rounded-md text-[12px] font-bold text-slate-500 hover:bg-slate-50 transition text-left'><svg class='chev shrink-0 text-slate-400' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'><path d='m9 5 7 7-7 7'/></svg>"+s.label+"</button><div class='acc-body'><div class='overflow-hidden'><ul class='pl-4 pb-1.5 space-y-0.5 border-l acc-line ml-4'>"+
+      (s.pages.length?s.pages.map(function(p){return "<li><button data-nav='"+p.id+"' data-page='"+p.id+"' class='leaf w-full text-left text-[13px] px-3 py-1.5 rounded-md text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition'>"+p.label+"</button></li>";}).join(""):"<li class='text-[12px] text-slate-400 px-3 py-1.5 italic'>Nothing here yet — new material lands here.</li>")+"</ul></div></div></div>";}).join("");}
+    else{inner="<ul class='pl-4 pb-1.5 space-y-0.5 border-l acc-line ml-4'>"+g.pages.map(function(p){return "<li><button data-nav='"+p.id+"' data-page='"+p.id+"' class='leaf w-full text-left text-[13px] px-3 py-1.5 rounded-md text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition'>"+p.label+"</button></li>";}).join("")+"</ul>";}
+    return "<div class='acc "+(isOpen?"open":"")+"' data-gid='"+gid+"'><button data-group='"+gid+"' class='w-full flex items-center gap-2 px-2.5 py-2 rounded-lg text-[13px] font-bold text-slate-700 hover:bg-slate-50 transition text-left'><svg class='chev shrink-0 text-slate-400' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3'><path d='m9 5 7 7-7 7'/></svg>"+g.label+"</button><div class='acc-body'><div class='overflow-hidden'>"+inner+"</div></div></div>";}).join("");
+  markLeaf();}
+function markLeaf(){document.querySelectorAll(".leaf").forEach(function(l){l.classList.toggle("on",l.getAttribute("data-page")===currentPage);});}
+function closeSidebar(){document.getElementById("sidebar").classList.add("-translate-x-full");document.getElementById("backdrop").classList.add("hidden");}
+function showPage(id){
+  currentPage=id;var d=CONTENT.pages[id],html="",after=null;
+  if(id==="home")html=renderHome();
+  else if(id==="quiz"){html=renderQuiz();after=initQuiz;}
+  else if(id==="vocab"){html=renderVocab();after=initVocab;}
+  else if(d)html=d.kind==="reading"?renderReading(d):d.kind==="writing"?renderWriting(d):d.kind==="speaking"?renderSpeaking(d):d.kind==="listening"?renderListening(d):renderWs(d);
+  else{html=renderHome();}
+  document.getElementById("content").innerHTML="<div class='max-w-4xl animate-fadein'>"+html+"</div>";
+  if(after)after();markLeaf();
+  var leaf=document.querySelector(".leaf[data-page='"+id+"']");var g=leaf?leaf.closest(".acc"):null;
+  while(g){if(!g.classList.contains("open")){g.classList.add("open");openG[g.getAttribute("data-gid")]=true;}g=g.parentElement?g.parentElement.closest(".acc"):null;}
+  closeSidebar();window.scrollTo({top:0});}
+function exportSingleFile(){
+  var clone=document.documentElement.cloneNode(true);
+  clone.querySelectorAll("[data-export-only]").forEach(function(n){n.remove();});
+  var json=JSON.stringify(CONTENT).replace(/</g,"\\u003c");
+  var s=clone.querySelector("script[src='content.js']")||clone.querySelector('script[src="content.js"]');
+  if(s){var inline=clone.ownerDocument.createElement("script");inline.textContent="var CONTENT="+json+";";s.parentNode.replaceChild(inline,s);}
+  var blob=new Blob(["<!DOCTYPE html>\n"+clone.outerHTML],{type:"text/html"});
+  var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="DSE-English-Guide-Michelle.html";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(a.href);}
+document.addEventListener("click",function(e){
+  var mb=e.target.closest("#menu-btn");if(mb){document.getElementById("sidebar").classList.toggle("-translate-x-full");document.getElementById("backdrop").classList.toggle("hidden");return;}
+  var bd=e.target.closest("#backdrop");if(bd){closeSidebar();return;}
+  var tb=e.target.closest("#theme-btn");if(tb){var dark=!document.documentElement.classList.contains("dark");document.documentElement.classList.toggle("dark",dark);try{localStorage.setItem("dse_theme",dark?"dark":"light");}catch(err){}document.getElementById("ico-moon").classList.toggle("hidden",dark);document.getElementById("ico-sun").classList.toggle("hidden",!dark);return;}
+  var ex=e.target.closest("#export-btn");if(ex){exportSingleFile();return;}
+  var gp=e.target.closest("[data-group]");if(gp){var el=document.querySelector(".acc[data-gid='"+gp.getAttribute("data-group")+"']");el.classList.toggle("open");openG[gp.getAttribute("data-group")]=el.classList.contains("open");return;}
+  var nv=e.target.closest("[data-nav]");if(nv){showPage(nv.getAttribute("data-nav"));return;}
+  var rev=e.target.closest("[data-reveal]");if(rev){var t=document.getElementById("rv-"+rev.getAttribute("data-reveal"));if(t){var hid=t.classList.toggle("hidden");if(rev.getAttribute("data-show"))rev.textContent=hid?rev.getAttribute("data-show"):rev.getAttribute("data-hide");}return;}
+  var all=e.target.closest("[data-all]");if(all){document.querySelectorAll("[id^='rv-']").forEach(function(t){t.classList.toggle("hidden",all.getAttribute("data-all")==="hide");});return;}
+  var chk=e.target.closest("[data-check]");if(chk){var item=chk.closest(".qitem"),inp=item.querySelector("[data-input]"),fb=item.querySelector("[data-fb]");var accepts=JSON.parse(chk.getAttribute("data-accepts"));var val=norm(inp.value||"");if(!val){fb.classList.remove("hidden");fb.className="mt-2 text-sm font-semibold text-amber-600";fb.textContent="Type an answer first.";return;}var ok=accepts.some(function(a){return norm(a)===val;});fb.classList.remove("hidden");fb.className="mt-2 text-sm font-semibold "+(ok?"text-emerald-600":"text-rose-500");fb.innerHTML=ok?"Correct — nicely done.":"Not quite. Press <b>Reveal</b> to see the model answer.";inp.classList.remove("border-emerald-400","border-rose-300","bg-emerald-50/40");if(ok)inp.classList.add("border-emerald-400","bg-emerald-50/40");else inp.classList.add("border-rose-300");return;}
+  var mc=e.target.closest("[data-mccheck]");if(mc){var wrap=mc.closest("[data-mcwrap]"),correct=+wrap.getAttribute("data-correct"),sel=wrap.querySelector("input:checked"),exp=wrap.querySelector("[data-mcexp]");exp.classList.remove("hidden");wrap.querySelectorAll("input").forEach(function(r){r.disabled=true;});wrap.querySelectorAll(".opt").forEach(function(lab,j){if(j===correct)lab.classList.add("ok");else if(sel&&+sel.value===j)lab.classList.add("bad");});exp.classList.add((sel&&+sel.value===correct)?"bg-emerald-50":"bg-amber-50",(sel&&+sel.value===correct)?"text-emerald-900":"text-amber-900");exp.innerHTML=((sel&&+sel.value===correct)?"Correct. ":"Not quite. ")+exp.innerHTML;return;}});
+document.getElementById("content").addEventListener("input",function(e){if(e.target.matches("[data-input]")){e.target.classList.remove("border-emerald-400","border-rose-300","bg-emerald-50/40");var fb=e.target.closest(".qitem");if(fb){fb=fb.querySelector("[data-fb]");if(fb)fb.classList.add("hidden");}}});
+document.getElementById("sb-search").addEventListener("input",function(e){var q=e.target.value.toLowerCase().trim();document.querySelectorAll("#sb-tree .acc").forEach(function(g){var any=false;g.querySelectorAll(".leaf").forEach(function(l){var hit=!q||l.textContent.toLowerCase().indexOf(q)>-1;l.parentElement.style.display=hit?"":"none";if(hit)any=true;});g.style.display=any?"":"none";if(q&&any)g.classList.add("open");});});
+window.addEventListener("error",function(ev){var box=document.getElementById("content");if(box)box.innerHTML="<div class='max-w-2xl mx-auto bg-rose-50 border-2 border-rose-300 rounded-2xl p-6 text-rose-800'><p class='font-bold mb-2'>A script error occurred:</p><pre class='text-xs whitespace-pre-wrap'>"+esc(ev.message)+" @ line "+ev.lineno+"</pre></div>";});
+(function boot(){
+  var dark=false;try{dark=localStorage.getItem("dse_theme")==="dark";}catch(e){}
+  document.getElementById("ico-moon").classList.toggle("hidden",dark);document.getElementById("ico-sun").classList.toggle("hidden",!dark);
+  if(typeof CONTENT==="undefined"){document.getElementById("content").innerHTML="<div class='max-w-2xl mx-auto bg-rose-50 border-2 border-rose-300 rounded-2xl p-6 text-rose-800'><p class='font-bold mb-2'>content.js is missing.</p><p class='text-sm'>Keep <b>content.js</b> in the same folder as this index.html, then refresh.</p></div>";return;}
+  renderTree();showPage("home");})();
+</script>
+</body>
+</html>
